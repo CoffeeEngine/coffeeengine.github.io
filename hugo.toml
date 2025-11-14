@@ -1,0 +1,146 @@
+baseURL = 'https://coffeeengine.github.io/'
+languageCode = 'vi-vn'
+title = 'Coffee Engine'
+
+defaultContentLanguage = "vi"
+defaultContentLanguageInSubdir = true
+hasCJKLanguage = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/google/docsy"
+
+  [[module.imports]]
+    path = "github.com/google/docsy/dependencies"
+
+[languages]
+
+[languages.en]
+  contentDir = "content/en"
+  languageName = "English"
+  weight = 2
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    name = "Docs"
+    url = "/en/docs/"
+    weight = 2
+
+  [[languages.en.menu.main]]
+    name = "Blog"
+    url = "/en/blog/"
+    weight = 3
+
+  [[languages.en.menu.main]]
+    name = "Versions"
+    url = "/en/docs/"
+    weight = 4
+
+  [languages.en.params.search]
+    enable = true
+
+  [languages.en.params.footer]
+    enable = true
+    name = "Your Project"
+    tagline = "Documentation powered by Hugo + Docsy"
+
+[languages.vi]
+  contentDir = "content/vi"
+  languageName = "Tiếng Việt"
+  weight = 1
+
+[languages.vi.menu]
+
+  [[languages.vi.menu.main]]
+    name = "Giới thiệu"
+    url = "/vi/about/"
+    weight = 1
+
+  [[languages.vi.menu.main]]
+    name = "Tài liệu"
+    url = "/vi/docs/"
+    weight = 2
+
+  [[languages.vi.menu.main]]
+    name = "Blog"
+    url = "/vi/blog/"
+    weight = 3
+
+  [[languages.vi.menu.main]]
+    name = "Phiên bản"
+    url = "/vi/docs/"
+    weight = 4
+
+  [languages.vi.params.search]
+    enable = true
+
+  [languages.vi.params.footer]
+    enable = true
+    name = "Dự án của bạn"
+    tagline = "Trang tài liệu xây bằng Hugo + Docsy"
+
+[menu]
+  [[menu.main]]
+    name = "Docs"
+    url = "/docs/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Versions"
+    weight = 3
+    url = "/docs/"
+
+    [[menu.main]]
+      parent = "Versions"
+      name = "v1"
+      url = "/docs/v1/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "Versions"
+      name = "v2"
+      url = "/docs/v2/"
+      weight = 2
+
+[outputs]
+  section = ["HTML", "RSS", "JSON"]
+  page    = ["HTML"]
+
+[params]
+  company = "MySite"
+  logo = "/img/logo.svg"
+
+[params.ui]
+  header.hideLanguageSelector = true
+  header.showTitle = true
+  showDarkModeToggle = true
+  defaultDarkMode = false
+
+[params.search]
+  enable = true
+  type = "lunr"
+
+[params.footer]
+  enable = true
+  name = "Your Project Name"
+  tagline = "Documentation powered by Hugo + Docsy"
+  
+[params.copyright]
+  holder = "Your Project"
+  year = "2025"
+  license = "CC BY 4.0"
+
+[markup]
+  [markup.highlight]
+    style = "github-dark"
+    noClasses = false
