@@ -31,10 +31,10 @@ hasCJKLanguage = true
     url = "/en/docs/"
     weight = 2
 
-  [[languages.en.menu.main]]
-    name = "Blog"
-    url = "/en/blog/"
-    weight = 3
+  # [[languages.en.menu.main]]
+  #   name = "Blog"
+  #   url = "/en/blog/"
+  #   weight = 3
 
   [[languages.en.menu.main]]
     name = "Versions"
@@ -66,10 +66,10 @@ hasCJKLanguage = true
     url = "/vi/docs/"
     weight = 2
 
-  [[languages.vi.menu.main]]
-    name = "Blog"
-    url = "/vi/blog/"
-    weight = 3
+  # [[languages.vi.menu.main]]
+  #   name = "Blog"
+  #   url = "/vi/blog/"
+  #   weight = 3
 
   [[languages.vi.menu.main]]
     name = "Phiên bản"
@@ -90,10 +90,10 @@ hasCJKLanguage = true
     url = "/docs/"
     weight = 1
 
-  [[menu.main]]
-    name = "Blog"
-    url = "/blog/"
-    weight = 2
+  # [[menu.main]]
+  #   name = "Blog"
+  #   url = "/blog/"
+  #   weight = 2
 
   [[menu.main]]
     name = "Versions"
@@ -134,7 +134,7 @@ hasCJKLanguage = true
   enable = true
   name = "Your Project Name"
   tagline = "Documentation powered by Hugo + Docsy"
-  
+
 [params.copyright]
   holder = "Your Project"
   year = "2025"
