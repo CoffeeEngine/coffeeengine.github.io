@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Get Started on Coffee Engine</title><link>https://coffeeengine.github.io/en/docs/v1/get-started/</link><description>Recent content in Get Started on Coffee Engine</description><generator>Hugo</generator><language>en</language><atom:link href="https://coffeeengine.github.io/en/docs/v1/get-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Requirements</title><link>https://coffeeengine.github.io/en/docs/v1/get-started/requirements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://coffeeengine.github.io/en/docs/v1/get-started/requirements/</guid><description>&lt;h1 id="requirements"&gt;Requirements&lt;/h1&gt;
+&lt;p&gt;Before installing the project, make sure you have:&lt;/p&gt;
+&lt;h2 id="system"&gt;System&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS, Linux, or Windows&lt;/li&gt;
+&lt;li&gt;Minimum 2GB RAM&lt;/li&gt;
+&lt;li&gt;Internet connection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="software"&gt;Software&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hugo Extended&lt;/strong&gt; (latest version)&lt;/li&gt;
+&lt;li&gt;Git&lt;/li&gt;
+&lt;li&gt;Node.js (only if you use PostCSS or SCSS builds)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check Hugo version:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>
