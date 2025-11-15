@@ -3,6 +3,8 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/en/docs/get-started/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/en/docs/get-started/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -17,17 +19,21 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Coffee Engine</title>
-<meta name="description" content="">
-<meta property="og:url" content="http://localhost:1313/en/blog/">
+<title>Get Started | Coffee Engine</title>
+<meta name="description" content="Everything you need to install, configure, and start using the project.">
+<meta property="og:url" content="http://localhost:1313/en/docs/get-started/">
   <meta property="og:site_name" content="Coffee Engine">
-  <meta property="og:title" content="Coffee Engine">
+  <meta property="og:title" content="Get Started">
+  <meta property="og:description" content="Everything you need to install, configure, and start using the project.">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
 
-  <meta itemprop="name" content="Coffee Engine">
+  <meta itemprop="name" content="Get Started">
+  <meta itemprop="description" content="Everything you need to install, configure, and start using the project.">
+  <meta itemprop="wordCount" content="27">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Coffee Engine">
+  <meta name="twitter:title" content="Get Started">
+  <meta name="twitter:description" content="Everything you need to install, configure, and start using the project.">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -35,7 +41,7 @@
   crossorigin="anonymous"></script>
 
   </head>
-  <body class="td-page td-blog">
+  <body class="td-section">
     <header>
       <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row">
@@ -60,7 +66,7 @@
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/vi/blog/">Tiếng Việt</a></li>
+    <li><a class="dropdown-item" href="/vi/docs/get-started/">Tiếng Việt</a></li>
     </ul>
 </div></li>
       </ul>
@@ -86,7 +92,7 @@
       <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/vi/blog/">Tiếng Việt</a></li>
+    <li><a class="dropdown-item" href="/vi/docs/get-started/">Tiếng Việt</a></li>
     </ul>
 </div>
     </div>
@@ -94,15 +100,15 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-en-li">
   <a href="/en/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-en"><span class="">Coffee Engine</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-enblog-li">
-  <a href="/en/blog/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__page" id="m-enblog"><span class="td-sidebar-nav-active-item"></span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-enblog-li">
+  <a href="/en/blog/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-enblog"><span class=""></span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-enabout-li">
   <a href="/en/about/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-enabout"><span class="">About</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-endocs-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-endocs-li">
   <a href="/en/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-endocs"><span class="">Docs</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-endocsget-started-li">
-  <a href="/en/docs/get-started/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-endocsget-started"><span class="">Get Started</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-endocsget-started-li">
+  <a href="/en/docs/get-started/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section" id="m-endocsget-started"><span class="td-sidebar-nav-active-item">Get Started</span></a>
   <ul class="ul-3 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-endocsget-startedrequirements-li">
   <a href="/en/docs/get-started/requirements/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-endocsget-startedrequirements"><span class="">Requirements</span></a>
@@ -127,38 +133,46 @@
             
 
           </aside>
-          <main class="col-12 col-md-9 col-xl-8 ps-md-5 pe-md-4" role="main">
-            <a class="td-rss-button" title="RSS" href="/en/index.xml" target="_blank" rel="noopener">
-              <i class="fa-solid fa-rss" aria-hidden="true"></i>
-            </a>
-            <nav aria-label="breadcrumb" class="td-breadcrumbs td-breadcrumbs__single">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/en/docs/">Docs</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    </li>
+    Get Started</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1></h1>
-	
-	<div class="td-byline mb-4">
-		
-		<time datetime="0001-01-01" class="text-body-secondary">Monday, January 01, 0001</time>
-	</div>
+	<h1>Get Started</h1>
+  <div class="lead">Everything you need to install, configure, and start using the project.</div>
 	<header class="article-meta">
 		
 </header>
-	
-	<ul class="list-unstyled d-flex justify-content-between align-items-center mb-0 pt-5">
-  <li>
-    <a class="btn btn-primary disabled"><span class="me-1">←</span>Previous</a>
-  </li>
-  <li>
-    <a class="btn btn-primary disabled">Next<span class="ms-1">→</span></a>
-  </li>
+	<h1 id="get-started">Get Started</h1>
+<p>This section helps you:</p>
+<ul>
+<li>Install the project</li>
+<li>Understand system requirements</li>
+<li>Run your first example</li>
+<li>Explore folder structure</li>
 </ul>
+<p>Select a topic from the sidebar to begin.</p>
 
-	</div>
-
+	<div class="section-index">
+    
+    
+    <hr class="panel-line">
+        <div class="entry">
+                <h5>
+                    <a href="/en/docs/get-started/requirements/">Requirements</a>
+                </h5>
+                <p></p>
+            </div>
+        </div>
+</div>
 
           </main>
         </div>

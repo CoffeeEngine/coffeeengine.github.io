@@ -1,5 +1,5 @@
 ---
-title: "Documentation"
+title: "Docs"
 description: "Learn how to use the project with guides, references, and examples."
 type: docs
 ---

@@ -2,6 +2,7 @@
 title: "Coffee Engine"
 description: "Learn more about this project, its goals, and the team behind it."
 type: docs
+layout: docs
 ---
 
 # About This Project

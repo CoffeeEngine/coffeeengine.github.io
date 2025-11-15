@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bắt đầu sử dụng on Coffee Engine</title>
-    <link>http://localhost:1313/vi/docs/v1/get-started/</link>
+    <link>http://localhost:1313/vi/docs/get-started/</link>
     <description>Recent content in Bắt đầu sử dụng on Coffee Engine</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:1313/vi/docs/v1/get-started/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/vi/docs/get-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Requirements</title>
-      <link>http://localhost:1313/vi/docs/v1/get-started/requirements/</link>
+      <title>Yêu cầu</title>
+      <link>http://localhost:1313/vi/docs/get-started/requirements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vi/docs/v1/get-started/requirements/</guid>
+      <guid>http://localhost:1313/vi/docs/get-started/requirements/</guid>
       <description>&lt;h1 id=&#34;requirements&#34;&gt;Requirements&lt;/h1&gt;&#xA;&lt;p&gt;Before installing the project, make sure you have:&lt;/p&gt;&#xA;&lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;macOS, Linux, or Windows&lt;/li&gt;&#xA;&lt;li&gt;Minimum 2GB RAM&lt;/li&gt;&#xA;&lt;li&gt;Internet connection&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;software&#34;&gt;Software&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Hugo Extended&lt;/strong&gt; (latest version)&lt;/li&gt;&#xA;&lt;li&gt;Git&lt;/li&gt;&#xA;&lt;li&gt;Node.js (only if you use PostCSS or SCSS builds)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Check Hugo version:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo version&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>

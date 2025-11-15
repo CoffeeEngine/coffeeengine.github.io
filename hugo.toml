@@ -36,10 +36,10 @@ hasCJKLanguage = true
   #   url = "/en/blog/"
   #   weight = 3
 
-  [[languages.en.menu.main]]
-    name = "Versions"
-    url = "/en/docs/"
-    weight = 4
+  # [[languages.en.menu.main]]
+  #   name = "Versions"
+  #   url = "/en/docs/"
+  #   weight = 4
 
   [languages.en.params.search]
     enable = true
@@ -71,10 +71,10 @@ hasCJKLanguage = true
   #   url = "/vi/blog/"
   #   weight = 3
 
-  [[languages.vi.menu.main]]
-    name = "Phiên bản"
-    url = "/vi/docs/"
-    weight = 4
+  # [[languages.vi.menu.main]]
+  #   name = "Phiên bản"
+  #   url = "/vi/docs/"
+  #   weight = 4
 
   [languages.vi.params.search]
     enable = true
@@ -85,6 +85,11 @@ hasCJKLanguage = true
     tagline = "Trang tài liệu xây bằng Hugo + Docsy"
 
 [menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
   [[menu.main]]
     name = "Docs"
     url = "/docs/"
@@ -112,13 +117,34 @@ hasCJKLanguage = true
       url = "/docs/v2/"
       weight = 2
 
+[params]
+  company = "Coffee Engine"
+  logo = "/img/logo.svg"
+
+  # The label shown in the banner
+  version = "v1.0" 
+
+  version_menu = "v1.0"
+
+  # Enables the red warning banner at the top of the page
+  # archived_version = true 
+  
+  # The URL to redirect users to the latest version
+  # url_latest_version = "https://your-docs-site.com/"
+
+[[params.versions]]
+  version = "v1.0"
+  # The base URL where your V2 docs are deployed
+  url = "https://coffeeengine.github.io/" 
+
+[[params.versions]]
+  version = "v0.9 (Archived)"
+  # The base URL where your older V1 docs are deployed
+  url = "https://coffeeengine.github.io/"
+
 [outputs]
   section = ["HTML", "RSS", "JSON"]
   page    = ["HTML"]
-
-[params]
-  company = "MySite"
-  logo = "/img/logo.svg"
 
 [params.ui]
   header.hideLanguageSelector = true

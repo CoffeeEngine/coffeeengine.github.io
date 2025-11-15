@@ -2,6 +2,7 @@
 title: "Coffee Engine"
 description: "Thông tin về dự án, mục tiêu và đội ngũ thực hiện."
 type: docs
+layout: docs
 ---
 
 # Giới thiệu về dự án
