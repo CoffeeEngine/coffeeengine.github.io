@@ -1,49 +1,78 @@
-name: Deploy to Github Pages
+name: Deploy website to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main # Set your default branch here (e.g., main or master)
+  workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          submodules: true
-          fetch-depth: 0
+          # IMPORTANT: Remove 'submodules: true' for Hugo Modules
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Node.js
+      # --- Hugo Modules Cache ---
+      # This cache step drastically speeds up subsequent builds
+      - name: Cache Hugo Modules
+        uses: actions/cache@v4
+        with:
+          path: /tmp/hugo_cache # Use a consistent cache path
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+            
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true # Required for Docsy's SCSS/Sass compilation
+
+      - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '20' 
+      
+      # Docsy theme requires PostCSS and Autoprefixer for its styling pipeline
+      - name: Install PostCSS/Autoprefixer dependencies
+        run: |
+          npm install -D postcss-cli autoprefixer postcss
 
-      - name: Install PostCSS
-        run: npm install
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "latest"
-          extended: true
-
-      - name: Build
+      - name: Build Hugo Site
+        # HUGO_CACHEDIR is set to the same path as the actions/cache step
         run: hugo --minify
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+        env:
+          HUGO_CACHEDIR: /tmp/hugo_cache 
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          path: ./public # Hugo's default output directory
+          
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
