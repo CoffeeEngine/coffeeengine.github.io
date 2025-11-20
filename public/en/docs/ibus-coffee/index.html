@@ -3,8 +3,8 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/en/docs/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/en/docs/index.json">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/en/docs/ibus-coffee/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/en/docs/ibus-coffee/index.json">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -19,20 +19,21 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Docs | Coffee Engine</title>
-<meta name="description" content="Docs for project.">
-<meta property="og:url" content="http://localhost:1313/en/docs/">
+<title>ibus-coffee | Coffee Engine</title>
+<meta name="description" content="Guide to install, configure, and start using.">
+<meta property="og:url" content="http://localhost:1313/en/docs/ibus-coffee/">
   <meta property="og:site_name" content="Coffee Engine">
-  <meta property="og:title" content="Docs">
-  <meta property="og:description" content="Docs for project.">
+  <meta property="og:title" content="ibus-coffee">
+  <meta property="og:description" content="Guide to install, configure, and start using.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
-  <meta itemprop="name" content="Docs">
-  <meta itemprop="description" content="Docs for project.">
+  <meta itemprop="name" content="ibus-coffee">
+  <meta itemprop="description" content="Guide to install, configure, and start using.">
+  <meta itemprop="wordCount" content="19">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Docs">
-  <meta name="twitter:description" content="Docs for project.">
+  <meta name="twitter:title" content="ibus-coffee">
+  <meta name="twitter:description" content="Guide to install, configure, and start using.">
 <link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -65,7 +66,7 @@
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/vi/docs/">Tiếng Việt</a></li>
+    <li><a class="dropdown-item" href="/vi/docs/ibus-coffee/">Tiếng Việt</a></li>
     </ul>
 </div></li>
       </ul>
@@ -91,7 +92,7 @@
       <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/vi/docs/">Tiếng Việt</a></li>
+    <li><a class="dropdown-item" href="/vi/docs/ibus-coffee/">Tiếng Việt</a></li>
     </ul>
 </div>
     </div>
@@ -100,10 +101,10 @@
   <a href="/en/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-en"><span class="">Coffee Engine</span></a>
   <ul class="ul-1">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-endocs-li">
-  <a href="/en/docs/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section" id="m-endocs"><span class="td-sidebar-nav-active-item">Docs</span></a>
+  <a href="/en/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-endocs"><span class="">Docs</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-endocsibus-coffee-li">
-  <a href="/en/docs/ibus-coffee/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-endocsibus-coffee"><span class="">ibus-coffee</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-endocsibus-coffee-li">
+  <a href="/en/docs/ibus-coffee/" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section" id="m-endocsibus-coffee"><span class="td-sidebar-nav-active-item">ibus-coffee</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-enabout-li">
@@ -123,7 +124,19 @@
 
 </div>
 
-            
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#install">Install</a>
+      <ul>
+        <li><a href="#debianubuntu---deb-package">Debian/Ubuntu - deb package</a></li>
+        <li><a href="#fedora---rpm-package">Fedora - rpm package</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
             
 
           </aside>
@@ -131,30 +144,31 @@
             
   
 
-            <nav aria-label="breadcrumb" class="td-breadcrumbs td-breadcrumbs__single">
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/en/docs/">Docs</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Docs</li>
+    ibus-coffee</li>
   </ol>
 </nav>
 <div class="td-content">
-	<h1>Docs</h1>
-  <div class="lead">Docs for project.</div>
+	<h1>ibus-coffee</h1>
+  <div class="lead">Guide to install, configure, and start using.</div>
 	<header class="article-meta">
 		
 </header>
-	
+	<h2 id="install">Install</h2>
+<h3 id="debianubuntu---deb-package">Debian/Ubuntu - deb package</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo add-apt-repository ppa:coffee-engine/ibus-coffee
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install ibus-coffee
+</span></span></code></pre></div><h3 id="fedora---rpm-package">Fedora - rpm package</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"></code></pre></div>
 	<div class="section-index">
     
     
-    <hr class="panel-line">
-        <div class="entry">
-                <h5>
-                    <a href="/en/docs/ibus-coffee/">ibus-coffee</a>
-                </h5>
-                <p>Guide to install, configure, and start using.</p>
-            </div>
-        </div>
+    </div>
 </div>
 
           </main>
